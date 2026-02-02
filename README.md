@@ -42,8 +42,8 @@ The application functions as a configuration parser and DNS resolver wrapper und
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/ConfigSplitterPro.git](https://github.com/YourUsername/ConfigSplitterPro.git)
-    cd ConfigSplitterPro
+    git clone [https://github.com/SinorDev/OV-Refiner.git](https://github.com/SinorDev/OV-Refiner.git)
+    cd OV-Refiner
     ```
 
 2.  **Restore dependencies:**
@@ -55,17 +55,19 @@ The application functions as a configuration parser and DNS resolver wrapper und
     ```bash
     dotnet build --configuration Release
     ```
+Or open `OVRefiner.sln` in Visual Studio to Build and Run.
 
 ## Usage
 
-1.  Launch the executable from `bin/Release/net6.0-windows/ConfigSplitterPro.exe`.
+1.  Launch the executable from `bin/Release/net6.0-windows/OV-Refiner.exe`.
 2.  **Select Config Type:** Choose between V2Ray protocols or OpenVPN.
 3.  **Input Source:**
     * *V2Ray:* Select a text file containing configuration strings (one per line) or Base64 subscription text.
     * *OpenVPN:* Select a directory containing `.ovpn` files.
 4.  **DNS Configuration:** Select a provider or input a custom DoH endpoint.
     * *Optional:* Enable "Binary Request" for custom DoH servers requiring RFC 8484 payloads.
-5.  **Output:** Processed files are generated in the source directory with timestamped filenames (`yyyyMMdd-mmhhss`).
+5.  **Start:** Press **START PROCESS**.
+6.  **Output:** Processed files are generated in the source directory with timestamped filenames (`yyyyMMdd-mmhhss`).
 
 ---
 
