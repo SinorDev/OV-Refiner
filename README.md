@@ -2,7 +2,6 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![.NET](https://img.shields.io/badge/.NET-6.0%20%7C%208.0-purple)
-![.NET](https://img.shields.io/badge/.NET-6.0%20%7C%208.0-512BD4?style=flat&logo=dotnet)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat&logo=windows)
 ![Language](https://img.shields.io/badge/Language-C%23-239120?style=flat&logo=csharp)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
