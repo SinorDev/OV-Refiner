@@ -41,7 +41,7 @@ The application functions as a configuration parser and DNS resolver wrapper und
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/SinorDev/OV-Refiner.git](https://github.com/SinorDev/OV-Refiner.git)
+    git clone https://github.com/SinorDev/OV-Refiner.git
     cd OV-Refiner
     ```
 
