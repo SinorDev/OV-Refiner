@@ -302,7 +302,7 @@
             MaximizeBox = false;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Config Splitter Pro";
+            Text = "OV Refiner";
             grpType.ResumeLayout(false);
             grpType.PerformLayout();
             grpInput.ResumeLayout(false);
@@ -337,4 +337,5 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.LinkLabel lnkGithub;
     }
+
 }
