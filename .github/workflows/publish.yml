@@ -31,7 +31,7 @@ jobs:
 
     - name: Zip the Build
       run: |
-        Compress-Archive -Path ./publish_output/* -DestinationPath OV-Refiner-Win-x86.zip
+        Compress-Archive -Path ./publish_output/* -DestinationPath OV-Refiner-Windows.zip
 
     - name: Create Release
       uses: softprops/action-gh-release@v1
