@@ -1,0 +1,41 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore OVRefiner.csproj
+
+    - name: Publish Application
+      run: |
+        dotnet publish OVRefiner.csproj -c Release -r win-x86 --self-contained false -o ./publish_output
+
+    - name: Zip the Build
+      run: |
+        Compress-Archive -Path ./publish_output/* -DestinationPath OV-Refiner-Win-x86.zip
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: OV-Refiner-Windows.zip
+        generate_release_notes: true
