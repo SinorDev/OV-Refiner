@@ -302,7 +302,7 @@
             MaximizeBox = false;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "OV Refiner";
+            Text = "OV Refiner"; 
             grpType.ResumeLayout(false);
             grpType.PerformLayout();
             grpInput.ResumeLayout(false);
@@ -339,3 +339,4 @@
     }
 
 }
+
